@@ -1,4 +1,5 @@
-public static boolean isSafe(char board[][], int row, int col) {
+public class NQueen{
+    public static boolean isSafe(char board[][], int row, int col) {
             //vertical up
             for(int i=row-1; i>=0; i--) {
                 if(board[i][col] == 'Q') {
@@ -62,3 +63,5 @@ public static boolean isSafe(char board[][], int row, int col) {
                 System.out.println("solution is not possible");
             }
         }
+
+}
